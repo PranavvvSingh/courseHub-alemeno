@@ -24,6 +24,7 @@ export type EnrollmentType = {
    email: string
    progress: number
    student_id: string
+   due: string
 }
 
 export type EnrolledCourseType = EnrollmentType & {

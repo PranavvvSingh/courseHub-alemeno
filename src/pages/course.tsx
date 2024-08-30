@@ -37,7 +37,7 @@ const Course = () => {
       )
 
    return (
-      <div className="my-10 space-y-10 w-[80%] md:w-[60%] mx-auto">
+      <div className="my-10 space-y-8 w-[80%] md:w-[60%] mx-auto">
          <div className="flex flex-col md:flex-row gap-5">
             <img
                src={course.thumbnail}
@@ -45,7 +45,9 @@ const Course = () => {
                className="h-[135px] w-[240px] border mx-auto"
             />
             <div className="flex flex-col gap-2">
-               <h1 className="text-2xl font-semibold text-center md:text-left">{course.name}</h1>
+               <h1 className="text-2xl font-semibold text-center md:text-left">
+                  {course.name}
+               </h1>
                <p>{course.description}</p>
                <h2 className="text-sm">{course.instructor}</h2>
                <div className="flex gap-1">
@@ -74,9 +76,13 @@ const Course = () => {
                ))}
             </ul>
          </div>
-         <div className="flex gap-5 items-center h-10 text-pretty">
+         <div className="flex gap-5 items-center ">
             <h1 className="text-xl font-semibold">Schedule:</h1>
-            {course.schedule}
+            <span className="mt-[2px]">{course.schedule}</span>
+         </div>
+         <div className="flex gap-5 items-center">
+            <h1 className="text-xl font-semibold">Location:</h1>
+            <span className="mt-[2px]">{course.location}</span>
          </div>
          <div>
             <h1 className="text-xl font-semibold">Syllabus</h1>

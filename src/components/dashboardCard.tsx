@@ -21,6 +21,7 @@ const DashboardCard = ({ enrollment }: { enrollment: EnrolledCourseType }) => {
          student_id: enrollment.student_id,
          name: enrollment.name,
          email: enrollment.email,
+         due: enrollment.due,
          progress: 100,
       }
       await axios.put(
@@ -57,6 +58,7 @@ const DashboardCard = ({ enrollment }: { enrollment: EnrolledCourseType }) => {
                   {enrollment.progress}% complete
                </div>
             </div>
+            <div className="text-sm text-neutral-600 text-center">Due: {enrollment.due}</div>
          </>
          {!loading &&
             (completed ? (

@@ -64,10 +64,10 @@ const Dashboard = () => {
 
    return (
       <>
-         <h1 className="text-xl md:text-2xl w-[80%] mx-auto mt-10">
+         <h1 className="text-xl md:text-2xl w-[80%] mx-auto mt-10 text-center">
             You have enrolled in {enrollments?.length} courses. Happy learning!
          </h1>
-         <div className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 min-[500px]:grid-cols-2 min-[1100px]:grid-cols-3 gap-5 mt-10 justify-items-center">
+         <div className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 min-[500px]:grid-cols-2 min-[1100px]:grid-cols-3 gap-10 my-10 justify-items-center">
             {enrollments?.map((enrollment) => (
                <DashboardCard key={enrollment.id} enrollment={enrollment} />
             ))}
