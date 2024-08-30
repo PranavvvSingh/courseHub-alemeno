@@ -33,4 +33,4 @@ Start the server
 ```
 
 ## Tech Stack
-React, Redux, Shadcn/ui, TailwindCSS
+React, Typescript, Redux, Shadcn/ui, TailwindCSS, Axios, Fuse.js
