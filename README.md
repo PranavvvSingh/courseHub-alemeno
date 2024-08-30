@@ -6,6 +6,9 @@ CourseHub displays a list of courses with number of likes, course details page a
 ## Live Deployment Link
 https://coursehub-yjzk.onrender.com/
 
+## Demo video
+https://screenrec.com/share/bGMNwSey8D
+
 ## Run Locally
 
 Clone the project
