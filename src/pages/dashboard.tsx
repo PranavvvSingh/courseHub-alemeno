@@ -67,7 +67,7 @@ const Dashboard = () => {
          <h1 className="text-xl md:text-2xl w-[80%] mx-auto mt-10">
             You have enrolled in {enrollments?.length} courses. Happy learning!
          </h1>
-         <div className="w-[90%] md:w-[80%] mx-auto flex flex-wrap gap-7 sm:gap-10 justify-  my-10">
+         <div className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 min-[500px]:grid-cols-2 min-[1100px]:grid-cols-3 gap-5 mt-10 justify-items-center">
             {enrollments?.map((enrollment) => (
                <DashboardCard key={enrollment.id} enrollment={enrollment} />
             ))}
