@@ -17,7 +17,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd .\courseHub-alemeno\
+  cd courseHub-alemeno
 ```
 
 Install dependencies
