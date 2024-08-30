@@ -7,7 +7,7 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
-const base_url = import.meta.env.VITE_BASE_URL
+const base_url = "https://66cef1cd901aab2484203e14.mockapi.io/course-hub"
 
 const Dashboard = () => {
    // assuming the current student id as 1
@@ -28,7 +28,10 @@ const Dashboard = () => {
       })
 
       if (courses.length === 0) {
-         const res = await axios.get(base_url + "/course")
+         const res = await axios.get(
+            "https://66cef1cd901aab2484203e14.mockapi.io/course-hub" +
+               "/course",
+         )
          allCourses = res.data
          dispatch(updateCourses(res.data))
       }

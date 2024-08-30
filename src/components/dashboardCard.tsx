@@ -5,7 +5,7 @@ import { useState } from "react"
 import Loader from "./loader"
 import { useNavigate } from "react-router-dom"
 
-const base_url = import.meta.env.VITE_BASE_URL
+const base_url = "https://66cef1cd901aab2484203e14.mockapi.io/course-hub"
 
 const DashboardCard = ({ enrollment }: { enrollment: EnrolledCourseType }) => {
    const navigate = useNavigate()

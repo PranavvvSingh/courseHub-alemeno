@@ -10,7 +10,7 @@ import { CourseType } from "@/types/types"
 import { Search } from "lucide-react"
 import { updateQuery } from "@/redux/searchSlice"
 
-const base_url = import.meta.env.VITE_BASE_URL
+const base_url = "https://66cef1cd901aab2484203e14.mockapi.io/course-hub"
 
 const Home = () => {
    const [loading, setLoading] = useState(false)
